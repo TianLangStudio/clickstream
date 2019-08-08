@@ -26,7 +26,7 @@ object ClickStreamETLApp {
     val ssc = new StreamingContext(conf, Seconds(3))
 
     val kafkaParams = Map[String, Object](
-      "bootstrap.servers" -> "192.168.0.102:9092",
+      "bootstrap.servers" -> "192.168.55.106:9092",
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
       "key.serializer" -> classOf[StringSerializer],
